@@ -38,8 +38,6 @@ steps:
       - tests/
       - -v
       - --tb=short
-      - --cov=app
-      - --cov-report=term-missing
     env:
       - "DATABASE_URL=sqlite:///:memory:"
     waitFor: [build]
